@@ -1,0 +1,27 @@
+
+{
+  "ZeroDay":{
+    "url": "http://www.zdnet.com/blog/security/",
+    "pattern": "<div class=\"river\">\n[ ]*<div>((?:\n.*)*)<nav class=\"pagination\">",
+    "record": "div,article",
+    "attributes":{
+      "Title": "div,div,1,h3,a,#text",
+      "Author": "div,div,1,p,1,a,#text",
+      "Summary": "div,div,1,p,0,#text",
+      "Date": "div,div,1,p,1,span,0,@data-date",
+      "Article-link": "div,div,1,h3,a,@href"
+    }
+  },
+  "HackerNews":{
+    "url": "https://thehackernews.com/",
+    "pattern": "<div class='blog-posts clear'>((?:\n.*)*)</div>\n*[ ]*<div[ ]*class='sticky-stopper'>",
+    "record": "div",
+    "attributes":{
+      "Title": "a,div,div,1,h2,#text",
+      "Date": "a,div,div,1,div,0,#text",
+      "Summary": "a,div,div,1,div,1,#text",
+      "Article-link": "a,@href",
+      "Author": "a,div,div,1,div,0,span,#text"
+    }
+  }
+}

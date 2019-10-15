@@ -1,0 +1,10 @@
+{
+  "Sender":{
+    "username": "shivangi@vmware.com",
+    "password": "Locky@11099311",
+    "smtp-server": "mail.vmware.com",
+    "smtp-port": 25
+  },
+  "Subscribers": ["rockyramchandani02@gmail.com", "jshivangi15@gmail.com"],
+  "Subject": "Updates from "
+}
